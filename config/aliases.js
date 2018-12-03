@@ -1,5 +1,7 @@
 const path = require('path');
 
 module.exports =  {
-  'Images': path.resolve(__dirname, '../src/images')
-}
+  'Components': path.resolve(__dirname, '../src/components'),
+  'Images': path.resolve(__dirname, '../src/images'),
+  'State': path.resolve(__dirname, '../src/state')
+};
