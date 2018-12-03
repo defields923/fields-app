@@ -1,10 +1,26 @@
 {
-  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
-  "plugins": ["jsx-a11y"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "mocha": true,
+    "node": false
+  },
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react"
+  ],
+  "extends": ["airbnb"],
   "rules": {
-    "no-multiple-empty-lines": "error",
-    "eol-last": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
-    "semi": "error"
+    "object-curly-newline": ["error", { "consistent": true }],
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-one-expression-per-line": 0
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { store } from 'State/store';
+import { store } from 'State/redux';
 import App from 'Components/';
 
 const Container = () => (
